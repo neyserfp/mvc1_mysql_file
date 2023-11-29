@@ -9,6 +9,12 @@
     $ficheroInsercion1 = basename($_FILES['ficheroInsercion1']['name']);
     $ficheroInsercionDir = $uploaddir . basename($_FILES['ficheroInsercion1']['name']);
 
+    $extension = pathinfo($ficheroInsercionDir)['extension'];
+
+    //print_r($_FILES);
+    //echo "Extensión: ".$extension;
+    //echo "<br>";
+
     move_uploaded_file($_FILES['ficheroInsercion1']['tmp_name'], $ficheroInsercionDir);
 
     if (file_exists("../Db/Con1Db.php")){

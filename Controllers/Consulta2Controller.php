@@ -42,7 +42,7 @@
             echo
             "
             <div class='bloque0'>
-                <div class='bloque1'>$row->mar_coc</div>
+                <div class='bloque1' param='$row->ide_coc'>$row->mar_coc</div>
                 <div class='bloque1'>$row->mod_coc</div>
                 <div class='bloque1'>$row->aut_coc</div>
                 <div class='bloque1'>

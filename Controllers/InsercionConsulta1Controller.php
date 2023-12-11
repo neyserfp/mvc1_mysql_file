@@ -40,7 +40,7 @@
         echo
         "
             <div class='bloque1 negrita'>
-                <div class='bloque1'>Marca</div>
+                <div class='bloque1'>Marcahh</div>
                 <div class='bloque1'>Modelo</div>
                 <div class='bloque1'>Autonomía</div>
                 <div class='bloque1'>Imágen</div>

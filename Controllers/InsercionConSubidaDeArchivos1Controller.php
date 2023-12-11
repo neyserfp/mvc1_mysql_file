@@ -29,12 +29,24 @@
 
     // Instanciacion del objeto
     $oData = new Datos;
+    $oData2 = new Datos;
 
     // Llamada al metodo
     $sql = "INSERT INTO coches(mar_coc, mod_coc, aut_coc, rut_coc) VALUES (?, ?, ?, ?)";
  
     $data = $oData->setDataUpFile1($sql, $textoInsercion1, $textoInsercion2, $textoInsercion3, $ficheroInsercion1);
+
+
+    // Segunda parte
+    $sql2 = "UPDATE coches SET rut_coc = ? WHERE ide_coc = ? ";
+    //echo "ID: ".mysqli_insert_id();
+    $data2 = $oData2->setRoutefile1($sql2, $extension);
+
+    //mysqli_insert_id()
+
+
     
     echo $data;
+    echo $data2;
 
 ?>
